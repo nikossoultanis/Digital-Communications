@@ -51,8 +51,4 @@ while abs(distortion(k) - distortion(k-1)) >= error % until we reach the error
     counter = counter + 1;
 end
 toc
-fprintf("Successfully exited the quantizer after %d iterations \n", length(distortion)-2);
-fprintf("And the distortion is %d. \n", distortion(length(distortion)));
-
-
 end
